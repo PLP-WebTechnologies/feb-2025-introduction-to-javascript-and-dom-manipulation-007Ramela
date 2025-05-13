@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sunny Orchard Fruit Farm</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="fade-in">
+    <h1>Welcome to Sunny Orchard</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Fruits</a></li>
+      <li><a href="#">Visit Us</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="intro" class="fade-in">
+      <p id="intro-text">We grow fresh, organic fruits all year round!</p>
+      <button onclick="changeText()">Change Message</button>
+    </section>
+
+    <section id="highlight" class="hover-bounce">
+      <h2>Featured Fruit: Mango</h2>
+      <button onclick="highlightSection()">Highlight This Section</button>
+    </section>
+
+    <section id="fruit-list" class="fade-in">
+      <h2>Our Fruits</h2>
+      <ul id="list">
+        <li>Apples</li>
+        <li>Bananas</li>
+        <li>Cherries</li>
+      </ul>
+      <button onclick="addFruit()">Add Fruit</button>
+      <button onclick="removeFruit()">Remove Fruit</button>
+    </section>
+
+    <section id="video-section" class="fade-in">
+      <h2>See Our Farm in Action</h2>
+      
+      <div class="video-wrapper">
+        <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/8HjWqzEp02E" 
+                title="People on a fruit farm" 
+                frameborder="0" 
+                allowfullscreen></iframe>
+
+        <video controls width="100%">
+                <source src="videos/farm.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+</video>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="fade-in">
+    <p>&copy; 2025 Sunny Orchard Fruit Farm</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
